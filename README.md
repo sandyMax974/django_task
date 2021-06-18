@@ -14,15 +14,19 @@ Therefore, this exercise is to create a Django 2.x project that contains task an
 
 ## How to run
 
+### Prerequisites
+
 1. Clone this repository: `git clone git@github.com:sandyMax974/django_task.git`
 2. `cd` into `django_task` directory
 4. Install [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv) (optional)
 5. Dowload Python 3.7.10: `pyenv install 3.7.10`
 6. Create a new virtualenv called `django_test`: `pyenv virtualenv 3.7.10 django_test`
 7. Activate virtualenv `pyenv activate django_test`
-8. Run dependancy install: `pip install requirements.txt`
-9. `cd` into `src` folder
-10. Run `python manage.py runserver`
+9. Run dependancy install: `pip install requirements.txt`
+
+### Run server
+1. `cd` into `src` folder
+2. Run `python manage.py runserver`
 
 We will be using the default database provided by Django 2.0.7 (SQLite3)
 
