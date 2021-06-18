@@ -22,6 +22,14 @@ ERC
 6. Create a new virtualenv called `django_test`: `pyenv virtualenv 3.7.10 django_test`
 7. Activate virtualenv `pyenv activate django_test`
 8. Run dependancy install: `pip install requirements.txt`
-9. Run `python manage.py runserver`
+9. `cd` into `src` folder
+10. Run `python manage.py runserver`
 
 We will be using the default database provided by Django 2.0.7 (SQLite3)
+
+## Usage
+
+**Available routes**
+* http://127.0.0.1:8000/admin/ # django admin console
+* http://127.0.0.1:8000/api/tiles # tiles app endpoints
+* http://127.0.0.1:8000/api/tasks # tasks app endpoints
