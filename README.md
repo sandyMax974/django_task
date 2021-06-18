@@ -10,9 +10,11 @@ Therefore, this exercise is to create a Django 2.x project that contains task an
 
 ## Planning
 
-![Entity_relationship Diagram](https://github.com/sandyMax974/django_task/blob/main/documents/Screenshot%202021-06-18%20at%2010.06.56.png)
+![Entity_relationship Diagram](https://github.com/sandyMax974/django_task/blob/main/documents/Screenshot%202021-06-18%20at%2012.31.44.png)
 
 ## How to run
+
+### Prerequisites
 
 1. Clone this repository: `git clone git@github.com:sandyMax974/django_task.git`
 2. `cd` into `django_task` directory
@@ -20,15 +22,18 @@ Therefore, this exercise is to create a Django 2.x project that contains task an
 5. Dowload Python 3.7.10: `pyenv install 3.7.10`
 6. Create a new virtualenv called `django_test`: `pyenv virtualenv 3.7.10 django_test`
 7. Activate virtualenv `pyenv activate django_test`
-8. Run dependancy install: `pip install requirements.txt`
-9. `cd` into `src` folder
-10. Run `python manage.py runserver`
+9. Run dependancy install: `pip install -r requirements.txt`
+
+### Run server
+1. `cd` into `src` folder
+2. Run migration to create DB tables: `python manage.py migrate`
+3. Run `python manage.py runserver`
 
 We will be using the default database provided by Django 2.0.7 (SQLite3)
 
 ## Usage
 
 **Available routes**
-* http://127.0.0.1:8000/admin/ # django admin console
-* http://127.0.0.1:8000/api/tiles # tiles app endpoints
-* http://127.0.0.1:8000/api/tasks # tasks app endpoints
+* http://127.0.0.1:8000/admin/    # django admin console (you'll need a superuser to access: Run `python manage.py createsuperuser` before step 3)
+* http://127.0.0.1:8000/api/tiles   # tiles app endpoints
+* http://127.0.0.1:8000/api/tasks   # tasks app endpoints
