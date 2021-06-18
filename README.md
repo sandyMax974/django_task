@@ -22,7 +22,7 @@ Therefore, this exercise is to create a Django 2.x project that contains task an
 5. Dowload Python 3.7.10: `pyenv install 3.7.10`
 6. Create a new virtualenv called `django_test`: `pyenv virtualenv 3.7.10 django_test`
 7. Activate virtualenv `pyenv activate django_test`
-9. Run dependancy install: `pip install requirements.txt`
+9. Run dependancy install: `pip install -r requirements.txt`
 
 ### Run server
 1. `cd` into `src` folder
