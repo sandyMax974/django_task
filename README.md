@@ -26,7 +26,7 @@ Therefore, this exercise is to create a Django 2.x project that contains task an
 
 ### Run server
 1. `cd` into `src` folder
-2. Run migartion to create DB tables: `python manage.py migrate`
+2. Run migration to create DB tables: `python manage.py migrate`
 3. Run `python manage.py runserver`
 
 We will be using the default database provided by Django 2.0.7 (SQLite3)
