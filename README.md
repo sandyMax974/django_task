@@ -10,7 +10,7 @@ Therefore, this exercise is to create a Django 2.x project that contains task an
 
 ## Planning
 
-![Entity_relationship Diagram](https://github.com/sandyMax974/django_task/blob/main/documents/Screenshot%202021-06-18%20at%2010.06.56.png)
+![Entity_relationship Diagram](https://github.com/sandyMax974/django_task/blob/main/documents/Screenshot%202021-06-18%20at%2012.31.44.png)
 
 ## How to run
 
