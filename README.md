@@ -34,6 +34,6 @@ We will be using the default database provided by Django 2.0.7 (SQLite3)
 ## Usage
 
 **Available routes**
-* http://127.0.0.1:8000/admin/ # django admin console
-* http://127.0.0.1:8000/api/tiles # tiles app endpoints
-* http://127.0.0.1:8000/api/tasks # tasks app endpoints
+* http://127.0.0.1:8000/admin/    # django admin console (you'll need a superuser to access: Run `python manage.py createsuperuser` before step 3)
+* http://127.0.0.1:8000/api/tiles   # tiles app endpoints
+* http://127.0.0.1:8000/api/tasks   # tasks app endpoints
