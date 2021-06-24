@@ -29,9 +29,8 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-CORS_ORIGIN_WHITELIST = [
-    "http://localhost:3000",
-]
+CORS_ORIGIN_WHITELIST = "http://localhost:3000"
+CSRF_TRUSTED_ORIGINS = "localhost:3000"
 
 INSTALLED_APPS = [
     "django.contrib.admin",
