@@ -7,5 +7,5 @@ from .serializer import TileSerializer
 
 
 class TileViewSet(viewsets.ModelViewSet):
-    queryset = Tile.objects.all()
+    queryset = Tile.objects.all().order_by("launchDate")
     serializer_class = TileSerializer
