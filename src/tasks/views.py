@@ -7,5 +7,5 @@ from .serializer import TaskSerializer
 
 
 class TaskViewSet(viewsets.ModelViewSet):
-    queryset = Task.objects.all()
+    queryset = Task.objects.all().order_by("order")
     serializer_class = TaskSerializer
