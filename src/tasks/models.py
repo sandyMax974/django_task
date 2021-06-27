@@ -9,3 +9,6 @@ class Task(models.Model):
     tile = models.ForeignKey(
         "tiles.Tile", on_delete=models.CASCADE, blank=True, null=True
     )
+
+    def _str_(self):
+        return self.title
