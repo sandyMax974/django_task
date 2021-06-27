@@ -9,3 +9,12 @@ from .serializer import TileSerializer
 class TileViewSet(viewsets.ModelViewSet):
     queryset = Tile.objects.all().order_by("launchDate")
     serializer_class = TileSerializer
+
+    def get_queryset(self):
+        queryset = Tile.objects.all().order_by("launchDate")
+
+        param = self.request.query_params.get("status", None)
+        if param:
+            queryset = queryset.filter(status=param)
+
+        return queryset
